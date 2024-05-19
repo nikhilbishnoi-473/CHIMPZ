@@ -28,13 +28,16 @@
     --orange: #FF9F00;
     --bg-color: #030D01;
 --border: #44C53252;
+--text-color: #5CE959;
 
 
 
 
 
 
-
+}
+.text-color{
+    color: var(--text-color);
 }
 .bg_circle{
     color: var(--bg_circle);
