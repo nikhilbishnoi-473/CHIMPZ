@@ -48,7 +48,7 @@
     background-image: url(../image/png/hearder.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 
 }
 
@@ -110,8 +110,13 @@
     background: var(--yellow);
     padding: 14px 32px 14px 32px;
     border: 0;
+    transition: all 400ms linear;
 }
-
+.btn_buy:hover{
+    background: var(--white);
+    color: var(--yellow);
+    box-shadow: 0px 0px 20px 0px var(--yellow);
+}
 .gap-32 {
     gap: 32px;
 }
@@ -146,9 +151,7 @@
     padding-bottom: 11px;
 }
 
-.pt-32 {
-    padding-top: 32px;
-}
+ 
 
 .pb-32 {
     padding-bottom: 32px;
@@ -617,6 +620,7 @@
     border: 1px solid var(--accordion-text);
 
 }
+
 .accordion-button {
     position: relative;
     display: flex;
@@ -627,15 +631,17 @@
     border-radius: 30px !important;
     transition: var(--bs-accordion-transition);
 }
+
 .accordion-button:focus {
     z-index: 3;
     outline: 0;
     box-shadow: none;
 }
+
 .accordion {
     --bs-accordion-color: var(--accordion-text);
     --bs-accordion-bg: none;
-    border-radius:30px !important;
+    border-radius: 30px !important;
     --bs-accordion-btn-padding-x: 32px;
     --bs-accordion-btn-padding-y: 15px;
     --bs-accordion-btn-color: var(--white);
@@ -657,24 +663,41 @@
     background-size: var(--bs-accordion-btn-icon-width);
     transition: var(--bs-accordion-btn-icon-transition);
 }
+
 .accordion-button:not(.collapsed)::after {
     background-image: url(../image/svg/accordion_svg_2.svg);
     transform: var(--bs-accordion-btn-icon-transform);
 }
-.mt-24{
+
+.mt-24 {
     margin-top: 24px;
 }
+
 .accordion-item {
-    color:none;
+    color: none;
     background-color: none;
     border: none;
 }
-.pt_80{
+
+.pt_80 {
     padding-top: 80px;
 }
-.pb-160{
+
+.pb-160 {
     padding-bottom: 160px;
 }
+
+.transition_scall {
+    transition: all 400ms linear;
+}
+
+.transition_scall:hover {
+    transform: scale(1.1);
+}
+.max-w-590{
+    max-width: 590px;
+}
+
 
 
 
@@ -765,8 +788,7 @@
     .menu span:nth-child(1) {
         height: 4px;
         width: 35px;
-        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
+        background: linear-gradient(146.43deg, #3B945E 1.77%, #00A600 62.74%);
         display: block;
         border-radius: 30px;
     }
@@ -774,8 +796,7 @@
     .menu span:nth-child(2) {
         height: 4px;
         width: 35px;
-        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
+        background: linear-gradient(146.43deg, #3B945E 1.77%, #00A600 62.74%);
         display: block;
         border-radius: 30px;
     }
@@ -783,8 +804,7 @@
     .menu span:nth-child(3) {
         height: 4px;
         width: 35px;
-        background: linear-gradient(146.43deg, #FF2801 1.77%, #FF6B0A 62.74%);
-
+        background: linear-gradient(146.43deg, #3B945E 1.77%, #00A600 62.74%);
         display: block;
         border-radius: 30px;
     }
@@ -815,6 +835,14 @@
 
     .flex-col {
         flex-direction: column;
+    }
+
+    .gap-46 {
+        gap: 30px;
+    }
+
+    .gap-60 {
+        gap: 20px;
     }
 
     .max-w-585 {
@@ -853,11 +881,51 @@
     .d_none_lg {
         display: block !important;
     }
-}
-@media (max-width: 768px) {
+    .bg_image {
+        background-image: url(../image/png/hearder.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     
-.accordion {
-    --bs-accordion-body-padding-x: 1.25rem;
-    --bs-accordion-body-padding-y: 0.5rem;
+    }
+    .pt_40{
+        padding-top: 40px;
+    }
+    .pt-180{
+        padding-top: 100px;
+    }
+    .pb-174{
+        padding-bottom: 100px;
+    }
 }
+
+@media (max-width: 768px) {
+
+    .accordion {
+        --bs-accordion-body-padding-x: 1.25rem;
+        --bs-accordion-body-padding-y: 0.5rem;
+    }
+    .pt-32{
+        padding-top: 10px;
+    }
+    .pt-180{
+        padding-top: 50px;
+    }
+    .pb-174{
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .pt-180{
+        padding-top: 30px;
+    }
+    .pb-174{
+        padding-bottom: 30px;
+    }
+    .shadow_box {
+        width: 100%;
+        height: 65px;
+        background: linear-gradient(180deg, #030D01 0%, rgba(3, 13, 1, 0) 100%);
+        transform: rotateX(177deg);
+    }
 }
