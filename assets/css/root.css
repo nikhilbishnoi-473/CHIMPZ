@@ -27,22 +27,44 @@
     --heading: #3B945E;
     --orange: #FF9F00;
     --bg-color: #030D01;
---border: #44C53252;
---text-color: #5CE959;
-
+    --border: #44C53252;
+    --text-color: #5CE959;
+    --gray: #EAA763;
+    --light-yellow: #F7D567;
+    --red: #B73537;
+    --green: #27603D;
 
 
 
 
 
 }
-.text-color{
+
+.green {
+    color: var(--green);
+}
+
+.red {
+    color: var(--red);
+}
+
+.light-yellow {
+    color: var(--light-yellow);
+}
+
+.gray {
+    color: var(--gray);
+}
+
+.text-color {
     color: var(--text-color);
 }
-.bg_circle{
+
+.bg_circle {
     color: var(--bg_circle);
 }
-.border{
+
+.border {
     color: var(--border);
 }
 
@@ -133,22 +155,27 @@
 .orange {
     color: var(--orange);
 }
-.bg-color{
+
+.bg-color {
     color: var(--bg-color);
 }
- .Dela_font {
+
+.Dela_font {
     font-family: 'Dela Gothic One', sans-serif;
 }
-  
-  .Fira_Sans {
+
+.Fira_Sans {
     font-family: 'Fira Sans', sans-serif;
 }
+
 .Roboto {
     font-family: 'Roboto', sans-serif;
 }
+
 .Exo_2 {
     font-family: 'Exo 2', sans-serif;
 }
+
 @media (min-width: 575px) {
     :root {
         /* font-size */
@@ -172,23 +199,24 @@
         --line-34: 34px;
         --line-69: 60px;
         --line-76: 64px;
-    
+
         /* color */
         --white: #FFFFFF;
         --yellow: #FFC20A;
         --heading: #3B945E;
         --orange: #FF9F00;
         --bg-color: #030D01;
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     }
-    
+
 }
+
 @media (min-width: 768px) {
     :root {
         /* font-size */
@@ -212,20 +240,20 @@
         --line-34: 34px;
         --line-69: 69px;
         --line-76: 76px;
-    
+
         /* color */
         --white: #FFFFFF;
         --yellow: #FFC20A;
         --heading: #3B945E;
         --orange: #FF9F00;
         --bg-color: #030D01;
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
     }
-    
+
 }
