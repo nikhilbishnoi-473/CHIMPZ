@@ -250,6 +250,7 @@
     left: -118px;
     top: 81px;
     height: 361px;
+    z-index: 3;
 
 }
 
@@ -268,6 +269,7 @@
     top: 81px;
     right: -97px;
     height: 314px;
+    z-index: 3;
 
 
 }
@@ -287,6 +289,7 @@
     top: 138px;
     right: -137px;
     height: 232px;
+    z-index: 3;
 }
 
 .after_before {
@@ -304,6 +307,7 @@
     top: 138px;
     right: 133px;
     height: 232px;
+    z-index: 3;
 }
 
 .gap-16 {
@@ -780,7 +784,7 @@
     z-index: 0;
 }
 .ellips_10{
-    top:  13%;
+    top:  -22%;
     right: 0;
     z-index: 0;
 }
@@ -989,6 +993,15 @@
 
 .max-width_logo{
     max-width: 200px;
+}
+.bg_linear_img{
+    background-image: url(../image/png/bg_linear_img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    z-index: 0;   
+    top: -27%;
+    left: 0;
 }
 
 
