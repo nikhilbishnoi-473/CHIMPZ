@@ -789,7 +789,72 @@
     left: 0;
     z-index: 0;
 }
+/* bottom to top */
 
+/* back to top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background: var(--green);
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50px;
+    transition: all 400ms linear;
+}
+
+
+.link:hover {
+    text-decoration: none;
+    color: var(--bg-color);
+    box-shadow: 0px 0px 20px 0px var(--border);
+}
+
+/*===================*/
+/* PULSE GROW
+/*===================*/
+
+@-webkit-keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@keyframes pulse-grow-on-hover {
+    to {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+.pulse-grow-on-hover {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.pulse-grow-on-hover:hover,
+.pulse-grow-on-hover:focus,
+.pulse-grow-on-hover:active {
+    -webkit-animation-name: pulse-grow-on-hover;
+    animation-name: pulse-grow-on-hover;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
 
 
 
@@ -1089,6 +1154,9 @@
     .mt-44 {
         margin-top: 20px;
     }
+    .over_flow_hidden{
+        overflow: hidden !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -1136,11 +1204,11 @@
     }
 
     .gap-55 {
-        gap: 20px;
+        gap: 35px;
     }
 
     .gap-36 {
-        gap: 15px;
+        gap: 25px;
     }
 
     .circle_svg {

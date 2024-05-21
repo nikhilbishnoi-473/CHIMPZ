@@ -34,18 +34,21 @@
     --red: #B73537;
     --green: #27603D;
     --accordion-text: #00A600;
---accordion-bg: #121B10;
+    --accordion-bg: #121B10;
 
 
 
 
 }
-.accordion-bbg{
+
+.accordion-bbg {
     color: var(--accordion-bg);
 }
-.accordion-text{
+
+.accordion-text {
     color: var(--accordion-text);
 }
+
 .green {
     color: var(--green);
 }
