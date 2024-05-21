@@ -1219,6 +1219,9 @@
     .pb-149 {
         padding-bottom: 100px;
     }
+    .over_flow_hidden {
+        overflow: hidden !important;
+    }
 }
 
 @media (max-width: 768px) {
