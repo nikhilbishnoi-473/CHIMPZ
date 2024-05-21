@@ -4,3 +4,9 @@ function openNav() {
     document.querySelector(".menu").classList.toggle("cross")
   }
   
+  AOS.init(
+{
+  duration: 1200,
+}
+  );
+ 
