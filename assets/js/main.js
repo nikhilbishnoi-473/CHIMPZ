@@ -29,12 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
       let loadingOverlay = document.getElementById("loadingOverlay");
       loadingOverlay.style.display = "none";
       document.querySelector("body").classList.remove("overflow_hidden");
-    }, 3000);
+    }, 2000);
   });
 });
   AOS.init(
 {
   duration: 1200,
+  once: true,
 }
   );
  
