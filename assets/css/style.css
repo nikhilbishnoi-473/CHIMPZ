@@ -196,10 +196,7 @@
 
 
 
-.max-w-356 {
-    max-width: 356px;
-}
-
+ 
 .pt-105 {
     padding-top: 105px;
 }
@@ -1013,7 +1010,15 @@
     z-index: 0;
     top: -27%;
     left: 0;
+}
 
+
+.responsive_2 .slick-list {
+    margin: 0 -20px;
+}
+
+.responsive_2 .slick-slide {
+    margin: 0 20px;
 }
 
 
@@ -1065,7 +1070,7 @@
 
 @media (max-width: 1200px) {
     .overflow_x_scroll {
-        overflow-x: scroll;
+        overflow-x: scroll !important;
     }
 }
 
@@ -1073,6 +1078,10 @@
     .max-w-281 {
         max-width: 281px;
     }
+    .max-w-356 {
+        max-width: 356px;
+    }
+    
 }
 
 @media (max-width: 991.9px) {
@@ -1221,6 +1230,9 @@
     }
     .over_flow_hidden {
         overflow: hidden !important;
+    }
+    .big_box{
+        padding: 10px;
     }
 }
 
